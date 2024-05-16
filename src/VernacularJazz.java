@@ -18,6 +18,7 @@ public class VernacularJazz {
         for (int i = 0; i < 64; i++) {
             boogieDrop[i] = i + 1;
         }
+
         return boogieDrop;
     }
 
@@ -34,6 +35,7 @@ public class VernacularJazz {
         for (int i = 0; i < 64; i++) {
             tackyAnnie[i] = boxStep(i);
         }
+
         return tackyAnnie;
     }
 
@@ -72,7 +74,7 @@ public class VernacularJazz {
             // Swap the elements at index i and index j in the array
             int temp = cartWheel[i];
             cartWheel[i] = cartWheel[j];
-            cartWheel[j] = cartWheel[i];
+            cartWheel[j] = temp;
         }
     }
 
