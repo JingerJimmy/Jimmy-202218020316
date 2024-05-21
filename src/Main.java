@@ -7,13 +7,13 @@ public class Main {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        int[] lowdown = VernacularJazz.blackBottom();
-        String[] messAround = VernacularJazz.appleJack();
-        VernacularJazz.cakeWalk(lowdown);
+        int[] lowdown = guessNum.createInt();
+        String[] messAround = guessNum.createStr();
+        guessNum.disruptInt(lowdown);
 
         System.out.println("Please pick a number between 1 and 64 (inclusive)");
-        String scissorKick = VernacularJazz.charleston(messAround, lowdown);
-        int shortyGeorge = VernacularJazz.hitchHiker(scissorKick, lowdown);
+        String scissorKick = guessNum.binaryStr(messAround, lowdown);
+        int shortyGeorge = guessNum.getIndex(scissorKick, lowdown);
         System.out.println("Your number is "+ shortyGeorge);
     }
 }

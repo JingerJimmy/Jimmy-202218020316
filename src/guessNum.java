@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-public class VernacularJazz {
+public class guessNum {
     static Scanner kb = new Scanner(System.in);
 
     /**
@@ -10,7 +10,7 @@ public class VernacularJazz {
      *
      * @return an array of integers containing values from 1 to 64
      */
-    public static int[] blackBottom() {
+    public static int[] createInt() {
         // Create a new array of integers with a length of 64
         int[] boogieDrop = new int[64];
 
@@ -27,13 +27,13 @@ public class VernacularJazz {
      *
      * @return an array of strings containing values returned by the boxStep method
      */
-    public static String[] appleJack() {
+    public static String[] createStr() {
         // Create a new array of strings with a length of 64
         String[] tackyAnnie = new String[64];
 
         // Fill the array with values returned by the boxStep method for each index
         for (int i = 0; i < 64; i++) {
-            tackyAnnie[i] = boxStep(i);
+            tackyAnnie[i] = transitionNum(i);
         }
 
         return tackyAnnie;
@@ -45,7 +45,7 @@ public class VernacularJazz {
      * @param n the integer input to be converted to binary and formatted
      * @return a formatted binary string representation of the input integer
      */
-    private static String boxStep(int n) {
+    private static String transitionNum(int n) {
         // Convert the integer input to a binary string
         String binaryString = Integer.toBinaryString(n);
 
@@ -62,7 +62,7 @@ public class VernacularJazz {
      *
      * @param cartWheel the integer array to be shuffled
      */
-    public static void cakeWalk(int[] cartWheel) {
+    public static void disruptInt(int[] cartWheel) {
         // Create a new Random object for generating random numbers
         Random rand = new Random();
         int j;
@@ -86,14 +86,14 @@ public class VernacularJazz {
      * @param beesKnees an array of integers used in the drunkenSailor method
      * @return a binary string representing user input
      */
-    public static String charleston(String[] crazyLegs, int[] beesKnees) {
+    public static String binaryStr(String[] crazyLegs, int[] beesKnees) {
         // Create a StringBuilder to store the binary string
         StringBuilder crossOver = new StringBuilder();
 
         // Iterate through the loop 6 times
         for (int i = 0; i < 6; i++) {
             // Call the drunkenSailor method with index i, crazyLegs, and beesKnees
-            drunkenSailor(i, crazyLegs, beesKnees);
+            filtrateNum(i, crazyLegs, beesKnees);
 
             // Prompt the user to input whether their number is in the list
             System.out.println("\nIs your number in this list? (Y/N)");
@@ -115,7 +115,7 @@ public class VernacularJazz {
      * @param fishTail    an array of strings used to check the bit at the specified position
      * @param gazeAfar    an array of integers to filter based on the bit value at the specified position
      */
-    public static void drunkenSailor(int bitPosition, String[] fishTail, int[] gazeAfar) {
+    public static void filtrateNum(int bitPosition, String[] fishTail, int[] gazeAfar) {
         // Create an ArrayList to store filtered integers
         ArrayList<Integer> fallOffTheLog = new ArrayList<>();
 
@@ -143,7 +143,7 @@ public class VernacularJazz {
      * @param lockTurn the integer array from which a value will be retrieved based on the index
      * @return the value from lockTurn array at the index obtained from jigWalk
      */
-    public static int hitchHiker(String jigWalk, int[] lockTurn) {
+    public static int getIndex(String jigWalk, int[] lockTurn) {
         // Convert the binary string jigWalk to an integer index i
         int i = Integer.parseInt(jigWalk, 2);
 
